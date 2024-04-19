@@ -110,6 +110,11 @@ body {
     border: none;
     flex: 0 0 75%;
     max-width: 80%;
+    padding: 13px 10px;
+    /* Горизонтальные отступы */
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
 }
 
 .search-input::placeholder {
@@ -117,16 +122,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
     font-weight: 300;
-    padding: 13px 0px 13px 20px;
+    padding: 13px 10px;
+    /* Горизонтальные отступы */
 }
 
 .search-input:focus {
     outline: none;
     color: #2c71b8;
-        font-family: 'Roboto', sans-serif;
-        font-size: 21px;
-        font-weight: 300;
-        padding: 13px 0px 13px 20px;
+
 }
 
 .search-form {
