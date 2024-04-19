@@ -122,6 +122,11 @@ body {
 
 .search-input:focus {
     outline: none;
+    color: #2c71b8;
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-weight: 300;
+        padding: 13px 0px 13px 20px;
 }
 
 .search-form {
