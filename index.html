@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <header class="header">
@@ -61,9 +62,9 @@
                 </button>
               </form>
             </div>
-            <div class="header-cart">
-              <img src="images/cart-icon.png" alt="" />
-            </div>
+            <div class="header-cart" data-cart-count="0">
+  <img src="images/cart-icon.png" alt="" />
+</div>
           </div>
         </div>
       </div>
@@ -239,6 +240,13 @@
                   </button>
                 </div>
                 <div class="item-price">$599 <sup>25</sup></div>
+
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -275,6 +283,13 @@
                   </button>
                 </div>
                 <div class="item-price">$1250 <sup>99</sup></div>
+
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -311,6 +326,13 @@
                   </button>
                 </div>
                 <div class="item-price">$399 <sup>50</sup></div>
+
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -347,6 +369,13 @@
                   </button>
                 </div>
                 <div class="item-price">$599 <sup>25</sup></div>
+
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -383,6 +412,13 @@
                   </button>
                 </div>
                 <div class="item-price">$1250 <sup>99</sup></div>
+
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -410,15 +446,33 @@
                   <span><strong>SCREEN SIZE:</strong> 7 inches</span>
                   <span><strong>RAM:</strong> 1 GB</span>
                 </div>
-                <div class="item-buttons">
+
+                <!-- <div class="item-buttons">
                   <button class="btn btn-outline-success my-2 my-sm-0">
                     <img class="square-icon" src="images/sq_b.png" alt="Square Icon">
                   </button>
                   <button class="btn btn-outline-success my-2 my-sm-0">
                    <img class="square-icon" src="images/heart_b.png" alt="Square Icon">
                   </button>
-                </div>
+                </div> -->
+
+                <div class="item-buttons">
+        <button class="btn btn-outline-success my-2 my-sm-0">
+            <img class="square-icon" src="images/sq_b.png" alt="Square Icon">
+        </button>
+        <button class="btn btn-outline-success my-2 my-sm-0">
+            <img class="square-icon" src="images/heart_b.png" alt="Heart Icon">
+        </button>
+    </div>
+
+
                 <div class="item-price">$399 <sup>50</sup></div>
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -455,6 +509,14 @@
                   </button>
                 </div>
                 <div class="item-price">$599 <sup>25</sup></div>
+
+                <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -491,6 +553,12 @@
                   </button>
                 </div>
                 <div class="item-price">$1250 <sup>99</sup></div>
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -527,6 +595,12 @@
                   </button>
                 </div>
                 <div class="item-price">$399 <sup>50</sup></div>
+                 <div class="product-quantity">
+                  <button class="decrement-button">-</button>
+                  <input type="text" value="1">
+                  <button class="increment-button">+</button>
+                </div>
+
                 <div class="item-actions">
                   <button class="btn btn-block btn-outline-success my-2 my-sm-0 item-actions__more">
                     More details
@@ -549,5 +623,6 @@
 
       </main>
     <footer class="Footer">Footer</footer>
+  <script src="script.js"></script>
   </body>
 </html>
