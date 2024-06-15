@@ -51,3 +51,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     inputFields[index].value = currentValue + 1;
                 });
             });
+
+
+
+            // add slick
+          $(document).ready(function(){
+      $(".Slidebar_block").slick({
+        adaptiveHeight: true, // автоматическое распределение высоты слайдов
+        slidesToShow: 1, // количество слайдов для показа одновременно
+        slidesToScroll: 1, // количество слайдов для прокрутки за раз
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>'
+      });
+    });
+
+
+    // modal window
+      $(document).ready(function() {
+      // Скрыть модальное окно при загрузке страницы
+      $('.modal').hide();
+
+      // Открытие модального окна при клике на кнопку "More details"
+      $('.item-actions__more').click(function() {
+        $('.modal').fadeIn();
+      });
+
+      // Закрытие модального окна при клике на кнопку "X"
+      $('.btn-close').click(function() {
+        $('.modal').fadeOut();
+      });
+
+      // Закрытие модального окна при отправке формы
+      $('form').submit(function() {
+        $('.modal').fadeOut();
+        return false; //
+      });
+    });
